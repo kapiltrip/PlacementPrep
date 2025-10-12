@@ -1,45 +1,45 @@
-TODO - Coverage Checklist
+TODO - Coverage Checklist (Workbook)
 
-Mark each covered file: change [ ] to [x] or write "yes" at the end of the line. Add brief notes if helpful.
+How to use: For each item, do the simple task described (no code hints provided). When finished, change [ ] to [x] or write "yes". Add a short note if you want.
 
 Behavioral
-- [ ] src/behavioral/and2_b.v
-- [ ] src/behavioral/mux2_b.v
-- [ ] src/behavioral/not1_b.v
-- [ ] src/behavioral/or2_b.v
-- [ ] src/behavioral/tri_buf_b.v
-- [ ] src/behavioral/xnor2_b.v
-- [ ] src/behavioral/xor2_b.v
+- [ ] src/behavioral/and2_b.v — Do: Make a 2‑input AND and test all input combos
+
+- [ ] src/behavioral/mux2_b.v — Do: Make a 2:1 mux with select and test all cases
+- [ ] src/behavioral/not1_b.v — Do: Make a 1‑input inverter and test 0/1
+- [ ] src/behavioral/or2_b.v — Do: Make a 2‑input OR and test all input combos
+- [ ] src/behavioral/tri_buf_b.v — Do: Make a tri‑state buffer with enable; disabled output is high‑impedance
+- [ ] src/behavioral/xnor2_b.v — Do: Make a 2‑input XNOR and verify its truth table
+- [ ] src/behavioral/xor2_b.v — Do: Make a 2‑input XOR and verify its truth table
 
 Dataflow
-- [ ] src/dataflow/and2_d.v
-- [ ] src/dataflow/mux2_d.v
-- [ ] src/dataflow/not1_d.v
-- [ ] src/dataflow/or2_d.v
-- [ ] src/dataflow/tri_buf_d.v
-- [ ] src/dataflow/xnor_n_d.v
-- [ ] src/dataflow/xnor2_d.v
-- [ ] src/dataflow/xor_n_d.v
-- [ ] src/dataflow/xor2_d.v
+- [ ] src/dataflow/and2_d.v — Do: Make a 2‑input AND and verify the truth table
+- [ ] src/dataflow/mux2_d.v — Do: Make a 2:1 mux with select and verify both paths
+- [ ] src/dataflow/not1_d.v — Do: Make an inverter and verify 0→1 and 1→0
+- [ ] src/dataflow/or2_d.v — Do: Make a 2‑input OR and verify the truth table
+- [ ] src/dataflow/tri_buf_d.v — Do: Make a tri‑state buffer with enable; check high‑impedance when disabled
+- [ ] src/dataflow/xnor_n_d.v — Do: Make a 2‑input XNOR without using a direct XOR/XNOR operator; verify
+- [ ] src/dataflow/xnor2_d.v — Do: Make a 2‑input XNOR and verify the truth table
+- [ ] src/dataflow/xor_n_d.v — Do: Make a 2‑input XOR without using a direct XOR operator; verify
+- [ ] src/dataflow/xor2_d.v — Do: Make a 2‑input XOR and verify the truth table
 
 Gate-Level
-- [ ] src/gate_level/and2_g.v
-- [ ] src/gate_level/mux2_g.v
-- [ ] src/gate_level/not1_g.v
-- [ ] src/gate_level/or2_g.v
-- [ ] src/gate_level/tri_buf_g.v
-- [ ] src/gate_level/xnor2_from_nand_g.v
-- [ ] src/gate_level/xnor2_from_nor_g.v
-- [ ] src/gate_level/xnor2_g.v
-- [ ] src/gate_level/xor2_from_nand_g.v
-- [ ] src/gate_level/xor2_from_nor_g.v
-- [ ] src/gate_level/xor2_g.v
+- [ ] src/gate_level/and2_g.v — Do: Build a 2‑input AND from basic gates; verify
+- [ ] src/gate_level/mux2_g.v — Do: Build a 2:1 mux from basic gates; verify both paths
+- [ ] src/gate_level/not1_g.v — Do: Build an inverter from gates; verify
+- [ ] src/gate_level/or2_g.v — Do: Build a 2‑input OR from basic gates; verify
+- [ ] src/gate_level/tri_buf_g.v — Do: Build a tri‑state buffer with enable; check high‑impedance when off
+- [ ] src/gate_level/xnor2_from_nand_g.v — Do: Build a 2‑input XNOR using only NANDs; verify
+- [ ] src/gate_level/xnor2_from_nor_g.v — Do: Build a 2‑input XNOR using only NORs; verify
+- [ ] src/gate_level/xnor2_g.v — Do: Build a 2‑input XNOR using gate primitives; verify
+- [ ] src/gate_level/xor2_from_nand_g.v — Do: Build a 2‑input XOR using only NANDs; verify
+- [ ] src/gate_level/xor2_from_nor_g.v — Do: Build a 2‑input XOR using only NORs; verify
+- [ ] src/gate_level/xor2_g.v — Do: Build a 2‑input XOR using gate primitives; verify
 
 Testbenches
-- [ ] tb/common/assert.vh
-- [ ] tb/gates_all_styles_tb.v
-- [ ] tb/xor_xnor_tb.v
+- [ ] tb/common/assert.vh — Do: Ensure this macros file is available to your testbenches
+- [ ] tb/gates_all_styles_tb.v — Do: Test all gate styles and confirm expected outputs
+- [ ] tb/xor_xnor_tb.v — Do: Test XOR/XNOR modules with all input combos and confirm outputs
 
 Misc
-- [ ] sample.v
-
+- [ ] sample.v — Do: Use as a scratchpad for quick experiments as needed
