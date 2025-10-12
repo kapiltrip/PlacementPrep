@@ -1,0 +1,45 @@
+TODO - Coverage Checklist
+
+Mark each covered file: change [ ] to [x] or write "yes" at the end of the line. Add brief notes if helpful.
+
+Behavioral
+- [ ] src/behavioral/and2_b.v
+- [ ] src/behavioral/mux2_b.v
+- [ ] src/behavioral/not1_b.v
+- [ ] src/behavioral/or2_b.v
+- [ ] src/behavioral/tri_buf_b.v
+- [ ] src/behavioral/xnor2_b.v
+- [ ] src/behavioral/xor2_b.v
+
+Dataflow
+- [ ] src/dataflow/and2_d.v
+- [ ] src/dataflow/mux2_d.v
+- [ ] src/dataflow/not1_d.v
+- [ ] src/dataflow/or2_d.v
+- [ ] src/dataflow/tri_buf_d.v
+- [ ] src/dataflow/xnor_n_d.v
+- [ ] src/dataflow/xnor2_d.v
+- [ ] src/dataflow/xor_n_d.v
+- [ ] src/dataflow/xor2_d.v
+
+Gate-Level
+- [ ] src/gate_level/and2_g.v
+- [ ] src/gate_level/mux2_g.v
+- [ ] src/gate_level/not1_g.v
+- [ ] src/gate_level/or2_g.v
+- [ ] src/gate_level/tri_buf_g.v
+- [ ] src/gate_level/xnor2_from_nand_g.v
+- [ ] src/gate_level/xnor2_from_nor_g.v
+- [ ] src/gate_level/xnor2_g.v
+- [ ] src/gate_level/xor2_from_nand_g.v
+- [ ] src/gate_level/xor2_from_nor_g.v
+- [ ] src/gate_level/xor2_g.v
+
+Testbenches
+- [ ] tb/common/assert.vh
+- [ ] tb/gates_all_styles_tb.v
+- [ ] tb/xor_xnor_tb.v
+
+Misc
+- [ ] sample.v
+
