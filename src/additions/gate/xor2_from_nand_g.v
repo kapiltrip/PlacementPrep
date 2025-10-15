@@ -12,3 +12,4 @@ module xor2_from_nand_g (
   nand u4(y, q, r);
 endmodule
 
+

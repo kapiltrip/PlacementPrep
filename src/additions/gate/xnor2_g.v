@@ -7,3 +7,4 @@ module xnor2_g (
   xnor u_xnor(y, a, b);
 endmodule
 
+

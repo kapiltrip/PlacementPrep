@@ -3,7 +3,7 @@ Verilog Practice Codebase (3 Styles + Self‑Checking TB)
 This repo is a compact playground to practice Verilog in three coding styles with self‑checking testbenches.
 
 Contents
-- src/gate_level: Primitive/structural (and/or/not, mux2, tri-state)
+- src/additions/gate: Primitive/structural (and/or/not, mux2, tri-state)
 - src/dataflow: Continuous assignment style
 - src/behavioral: always @* procedural style
 - tb: One consolidated, self‑checking testbench that sweeps all input combinations
@@ -27,4 +27,3 @@ Next Ideas
 - Add more blocks (full adder, comparators, encoders/decoders)
 - Write random/ranged tests and functional coverage (if using SystemVerilog)
 - Try a ring‑oscillator (odd inverters) for simulation only and study Z->X behavior
-

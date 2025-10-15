@@ -12,3 +12,4 @@ module mux2_g (
   or   u3(y, ya, yb);
 endmodule
 
+

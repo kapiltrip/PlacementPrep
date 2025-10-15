@@ -12,3 +12,4 @@ module xnor2_from_nand_g (
   nand u5(y, xor_y, xor_y); // invert to get XNOR
 endmodule
 
+

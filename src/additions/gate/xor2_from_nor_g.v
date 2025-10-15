@@ -14,3 +14,4 @@ module xor2_from_nor_g (
   nor u6(y, y_n, y_n);// invert to get XOR
 endmodule
 
+

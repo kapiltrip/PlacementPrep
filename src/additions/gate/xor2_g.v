@@ -7,3 +7,4 @@ module xor2_g (
   xor u_xor(y, a, b);
 endmodule
 
+

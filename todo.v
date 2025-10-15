@@ -413,7 +413,7 @@ assign y = a ^ b;
 endmodule
 
 // ===== Gate‑Level =====
-// [ ] src/gate_level/and2_g.v — Do: Build a 2‑input AND from basic gates; verify
+// [ ] src/additions/gate/and2_g.v — Do: Build a 2‑input AND from basic gates; verify
 // --- write your code below ---
 module and_g(
     input wire a,b,
@@ -430,7 +430,7 @@ endmodule
    timing-aware sims, each primitive adds delay; here we assume zero delay.
    Add a TB to enumerate inputs and confirm the truth table. */
 
-// [ ] src/gate_level/mux2_g.v — Do: Build a 2:1 mux from basic gates; verify both paths
+// [ ] src/additions/gate/mux2_g.v — Do: Build a 2:1 mux from basic gates; verify both paths
 // --- write your code below ---
 module mux_g(
     input wire a,b,
@@ -465,7 +465,7 @@ and (b_path, b, sel);
 or  (y, a_path, b_path);
 endmodule
 
-// [ ] src/gate_level/not1_g.v — Do: Build an inverter from gates; verify
+// [ ] src/additions/gate/not1_g.v — Do: Build an inverter from gates; verify
 // --- write your code below ---
 module not_d(
     input wire a,
@@ -490,7 +490,7 @@ module not_g_ref(
 not (y, a);
 endmodule
 
-// [ ] src/gate_level/or2_g.v — Do: Build a 2‑input OR from basic gates; verify
+// [ ] src/additions/gate/or2_g.v — Do: Build a 2‑input OR from basic gates; verify
 // --- write your code below ---
 module or_g(
     input wire a,b,
@@ -507,7 +507,7 @@ endmodule
    helpful for teaching but dataflow is typically preferred in production RTL.
    Verify truth table with a short TB. */
 
-// [ ] src/gate_level/tri_buf_g.v — Do: Build a tri‑state buffer with enable; check high‑impedance when off
+// [ ] src/additions/gate/tri_buf_g.v — Do: Build a tri‑state buffer with enable; check high‑impedance when off
 // --- write your code below ---
 module triBuffer(
     input wire a,
@@ -533,7 +533,7 @@ module triBuffer_ref(
 bufif1 (y, a, en);
 endmodule
 
-// [ ] src/gate_level/xnor2_from_nand_g.v — Do: Build a 2‑input XNOR using only NANDs; verify
+// [ ] src/additions/gate/xnor2_from_nand_g.v — Do: Build a 2‑input XNOR using only NANDs; verify
 // --- write your code below ---
 //5 gates needed
 module xnor_g(
@@ -569,7 +569,7 @@ nand (s, q, r);
 nand (y, s, s);
 endmodule
 
-// [ ] src/gate_level/xnor2_from_nor_g.v — Do: Build a 2‑input XNOR using only NORs; verify
+// [ ] src/additions/gate/xnor2_from_nor_g.v — Do: Build a 2‑input XNOR using only NORs; verify
 // --- write your code below ---
 //4 gates needed
 module xnor_g(
@@ -603,7 +603,7 @@ nor (e, b, c);
 nor (y, d, e);
 endmodule
 
-// [ ] src/gate_level/xnor2_g.v — Do: Build a 2‑input XNOR using gate primitives; verify
+// [ ] src/additions/gate/xnor2_g.v — Do: Build a 2‑input XNOR using gate primitives; verify
 // --- write your code below ---
 module xnor_g(
     input wire a,b,
@@ -627,7 +627,7 @@ module xnor2_g_ref(
 xnor (y, a, b);
 endmodule
 
-// [ ] src/gate_level/xor2_from_nand_g.v — Do: Build a 2‑input XOR using only NANDs; verify
+// [ ] src/additions/gate/xor2_from_nand_g.v — Do: Build a 2‑input XOR using only NANDs; verify
 // --- write your code below ---
 
 module xnor_g(
@@ -657,7 +657,7 @@ nand (r, b, p);
 nand (y, q, r);
 endmodule
 
-// [ ] src/gate_level/xor2_from_nor_g.v — Do: Build a 2‑input XOR using only NORs; verify
+// [ ] src/additions/gate/xor2_from_nor_g.v — Do: Build a 2‑input XOR using only NORs; verify
 // --- write your code below ---
 //5 gates required
 module xor_g(
@@ -693,7 +693,7 @@ nor (f, d, e);
 nor (y, f, f);
 endmodule
 
-// [ ] src/gate_level/xor2_g.v - Do: Build a 2-input XOR using gate primitives; verify
+// [ ] src/additions/gate/xor2_g.v - Do: Build a 2-input XOR using gate primitives; verify
 // --- write your code below ---
 module xor_g(
     input wire a,b,

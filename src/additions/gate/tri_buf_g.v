@@ -7,3 +7,4 @@ module tri_buf_g (
   bufif1 u_buf(y, a, en); // drive when en==1, else Z
 endmodule
 
+
