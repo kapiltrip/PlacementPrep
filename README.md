@@ -6,7 +6,8 @@ Contents
 - src/additions/gate: Primitive/structural (and/or/not, mux2, tri-state)
 - src/dataflow: Continuous assignment style
 - src/behavioral: always @* procedural style
-- tb: One consolidated, self‑checking testbench that sweeps all input combinations
+- src/combinational: Structured combinational circuits (arithmetic, detectors, etc.)
+- tb: One consolidated, self-checking testbench that sweeps all input combinations
 - docs/NOTES.md: Quick notes distilled from your notebook pages
 - run_all.ps1: Convenience script to compile/run all tests with Icarus Verilog
 
